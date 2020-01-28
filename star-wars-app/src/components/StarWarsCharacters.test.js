@@ -19,6 +19,5 @@ test('renders the form', async () => {
     fireEvent.click(nextTest)
     fireEvent.click(prevTest)
     expect(mockGetData).toHaveBeenCalledTimes(1)
-
-    wait (() => expect(getByText(/luke skywalker/i)))
+    await wait (() => expect(getByText(/luke skywalker/i)))
 })
